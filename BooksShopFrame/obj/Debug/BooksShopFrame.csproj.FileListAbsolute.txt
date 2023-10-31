@@ -1,0 +1,85 @@
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe.config
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.pdb
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.pdb
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.AssemblyReference.cache
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.g.cs
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\App.g.cs
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.cache
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.lref
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.baml
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.g.resources
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.Properties.Resources.resources
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.GenerateResource.cache
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CoreCompileInputs.cache
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CopyComplete
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.exe
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.pdb
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.dll
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll.config
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.xml
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.pdb
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll.config
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.g.cs
+C:\Users\Fuck the war!\Desktop\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.baml
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe.config
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.pdb
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.dll
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.dll
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.pdb
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll.config
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.xml
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.xml
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.pdb
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll.config
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.AssemblyReference.cache
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.g.cs
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.g.cs
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\App.g.cs
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.cache
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.lref
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.baml
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.baml
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.g.resources
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.Properties.Resources.resources
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.GenerateResource.cache
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CoreCompileInputs.cache
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CopyComplete
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.exe
+E:\Семестр 3\Домашні завдання\EntityFramework\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.pdb
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe.config
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.exe
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BooksShopFrame.pdb
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.dll
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.pdb
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\BLL.dll.config
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.xml
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.pdb
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\bin\Debug\DAL.dll.config
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.AssemblyReference.cache
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.g.cs
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.g.cs
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\App.g.cs
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.cache
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame_MarkupCompile.lref
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BookContentWindow.baml
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\MainWindow.baml
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.g.resources
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.Properties.Resources.resources
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.GenerateResource.cache
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CoreCompileInputs.cache
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.csproj.CopyComplete
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.exe
+C:\Users\Net\Desktop\Exam\BooksShopFrame\BooksShopFrame\obj\Debug\BooksShopFrame.pdb

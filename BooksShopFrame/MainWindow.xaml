@@ -1,0 +1,370 @@
+﻿<Window x:Class="BooksShopFrame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BooksShopFrame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="1100" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="DataGrid">
+            <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+            <Setter Property="FontFamily" Value="Segoe Print"></Setter>
+            <Setter Property="FontSize" Value="14.5"></Setter>
+            <Setter Property="Opacity" Value="0.9"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="LightSteelBlue"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Margin="3">
+        <Grid.Background>
+            <ImageBrush ImageSource="\Images\img5.jpg"></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.09*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="0.45*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" TextAlignment="Center" 
+                   FontSize="30" Foreground="#FFFFDE00" FontWeight="Bold">Магазин</TextBlock>
+        <TextBlock Grid.Row="0" Grid.Column="1" TextAlignment="Center" 
+                   FontSize="30" Foreground="#FFFFDE00" FontWeight="Bold">Мої книги</TextBlock>
+
+
+        <Grid Grid.Row="2" Grid.Column="1" Margin="-130,2,110,65">
+            <Grid.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="Background" Value="Blue"></Setter>
+                    <Setter Property="CornerRadius" Value="10"></Setter>
+                    <Setter Property="Margin" Value="4"></Setter>
+                    <Setter Property="Opacity" Value="0.85"></Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="LightSteelBlue"></Setter>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+
+                <Style TargetType="Label">
+                    <Setter Property="FontFamily" Value="Segoe Print"></Setter>
+                    <Setter Property="Foreground" Value="White"></Setter>
+                    <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+                    <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+                    <Setter Property="FontSize" Value="15"></Setter>
+                    <Setter Property="FontWeight" Value="DemiBold"></Setter>
+                </Style>
+
+                <Style TargetType="Popup">
+                    <Setter Property="Placement" Value="Bottom"></Setter>
+                    <Setter Property="Width" Value="600"></Setter>
+                    <Setter Property="Height" Value="400"></Setter>
+                    <Setter Property="PopupAnimation" Value="Scroll"></Setter>
+                    <Setter Property="AllowsTransparency" Value="True"></Setter>
+                </Style>
+            </Grid.Resources>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Border Visibility="Hidden" MouseLeftButtonUp="playRadioBT_MouseLeftButtonUp" Name="playRadioBT" Grid.Row="2" Grid.Column="2">
+                <Label>Слухати радіо</Label>
+            </Border>
+
+            <Border MouseLeftButtonUp="addBookBT_MouseLeftButtonUp" Visibility="Hidden" Name="addBookBT" Grid.Row="0" Grid.Column="1">
+                <Label>Добавити книгу</Label>
+            </Border>
+            <Border MouseLeftButtonUp="deleteBookBT_MouseLeftButtonUp" Visibility="Hidden" Name="deleteBookBT" Grid.Row="1" Grid.Column="1">
+                <Label>Видалити книгу</Label>
+            </Border>
+            <Border MouseLeftButtonUp="updateBookBT_MouseLeftButtonUp" Visibility="Hidden" Name="updateBookBT" Grid.Row="2" Grid.Column="1">
+                <Label>Редагувати книгу</Label>
+            </Border>
+
+            <Border MouseLeftButtonUp="byBookBT_MouseLeftButtonUp_1" Visibility="Hidden" Name="byBookBT" Grid.Row="0" Grid.Column="1">
+                <Label>Пошук за назвою</Label>
+            </Border>
+            <Border MouseLeftButtonUp="nameSerchBT_MouseLeftButtonUp" Visibility="Hidden" Name="nameSerchBT" Grid.Row="1" Grid.Column="1">
+                <Label>Пошук за автором</Label>
+            </Border>
+            <Border MouseLeftButtonUp="autorSerchBT_MouseLeftButtonUp" Visibility="Hidden" Name="autorSerchBT" Grid.Row="2" Grid.Column="1">
+                <Label>Пошук за жанром</Label>
+            </Border>
+            
+            <Border MouseLeftButtonUp="autorsSerchBT_MouseLeftButtonUp"  Visibility="Hidden" Name="autorsSerchBT" Grid.Row="0" Grid.Column="0">
+                <Label>Топ автори</Label>
+            </Border>
+            <Border MouseLeftButtonUp="newsSerchBT_MouseLeftButtonUp" Visibility="Hidden" Name="newsSerchBT" Grid.Row="1" Grid.Column="0">
+                <Label>Список новинок</Label>
+            </Border>
+            <Border MouseLeftButtonUp="topBooksSerchBT_MouseLeftButtonUp"  Visibility="Hidden" Name="topBooksSerchBT" Grid.Row="2" Grid.Column="0">
+                <Label>Топ книги</Label>
+            </Border>
+            
+            <Border MouseLeftButtonUp="byBookBT_MouseLeftButtonUp" Visibility="Hidden" Name="genreSerchBT" Grid.Row="0" Grid.Column="2">
+                <Label>Купити книгу</Label>
+            </Border>
+            
+            <Border MouseLeftButtonUp="readBookBT_MouseLeftButtonUp" Visibility="Hidden" Name="readBookBT" Grid.Row="1" Grid.Column="2">
+                <Label>Читати книгу</Label>
+            </Border>
+            <Border Name="enterBT" Grid.Row="1" Grid.Column="0" MouseLeftButtonUp="enterBT_MouseLeftButtonUp">
+                <Label>Увійти</Label>
+            </Border>
+            <Border MouseLeftButtonUp="registrationBT_MouseLeftButtonUp" Name="registrationBT" Grid.Row="1" Grid.Column="1">
+                <Label>Реєстрація</Label>
+            </Border>
+
+            <Popup Name="registrationPop">
+                <Border BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <Border.Background>
+                        <ImageBrush ImageSource="\Images\pop1.jpg" Stretch="Fill"></ImageBrush>
+                    </Border.Background>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Margin="65,35,0,0" Grid.RowSpan="2" Grid.Row="0" FontSize="32" FontWeight="DemiBold" FontFamily="Segoe Print">В</TextBlock>
+                        <TextBlock Margin="110,0,0,0" Grid.Row="1" FontSize="16" FontWeight="Bold" FontFamily="Segoe Print">
+                        ведіть нікнейм:
+                        </TextBlock>
+                        <Border Grid.Row="2" Margin="85,10,20,10" Background="Cornsilk">
+                            <TextBox Name="regNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock Margin="70,0,0,10" Grid.Row="1" Grid.Column="1" FontSize="16" FontWeight="Bold" FontFamily="Segoe Print">
+                        Введіть пароль:
+                        </TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="50,10,50,10" Background="Cornsilk">
+                            <TextBox Name="regPassTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_1" Grid.Row="4" Grid.RowSpan="2" Margin="60,40,35,40" Background="White" BorderThickness="3" BorderBrush="Cornsilk">
+                            <Label Foreground="Green" Cursor="Hand">Готово</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="55,40,40,40" Background="White" BorderThickness="3" BorderBrush="Cornsilk">
+                            <Label Foreground="Red"  Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Popup>
+
+            <Popup Name="loginPop">
+                <Border BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <Border.Background>
+                        <ImageBrush ImageSource="\Images\pop1.jpg" Stretch="Fill"></ImageBrush>
+                    </Border.Background>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Margin="65,35,0,0" Grid.RowSpan="2" Grid.Row="0" FontSize="32" FontWeight="DemiBold" FontFamily="Segoe Print">В</TextBlock>
+                        <TextBlock Margin="110,0,0,0" Grid.Row="1" FontSize="16" FontWeight="Bold" FontFamily="Segoe Print">
+                        ведіть нікнейм:
+                        </TextBlock>
+                        <Border Grid.Row="2" Margin="85,10,20,10" Background="Cornsilk">
+                            <TextBox Name="logNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock Margin="70,0,0,10" Grid.Row="1" Grid.Column="1" FontSize="16" FontWeight="Bold" FontFamily="Segoe Print">
+                        Введіть пароль:
+                        </TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="50,10,50,10" Background="Cornsilk">
+                            <TextBox Name="logPassTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_3" Grid.Row="4" Grid.RowSpan="2" Margin="60,40,35,40" Background="White" BorderThickness="3" BorderBrush="Cornsilk">
+                            <Label Foreground="Green" Cursor="Hand">Готово</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_2" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="55,40,40,40" Background="White" BorderThickness="3" BorderBrush="Cornsilk">
+                            <Label Foreground="Red"  Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </Grid>
+                </Border>
+            </Popup>
+
+            <Popup Name="findNamePop" Height="220" Width="250" Placement="Center">
+                <Border Background="Cornsilk" BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Пошук:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="findNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_7" Grid.Row="4" Grid.RowSpan="2" Margin="5" Background="White" BorderThickness="3" BorderBrush="Green">
+                            <Label Foreground="Black" Cursor="Hand">Готово</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_4" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="5" Background="White" BorderThickness="3" BorderBrush="Red">
+                            <Label Foreground="Black" Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Popup>
+
+            <Popup Name="findAutorPop" Height="220" Width="250" Placement="Center">
+                <Border Background="Cornsilk" BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Пошук:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="findAutorTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_8" Grid.Row="4" Grid.RowSpan="2" Margin="5" Background="White" BorderThickness="3" BorderBrush="Green">
+                            <Label Foreground="Black" Cursor="Hand">Готово</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_5" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="5" Background="White" BorderThickness="3" BorderBrush="Red">
+                            <Label Foreground="Black" Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Popup>
+
+            <Popup Name="findGenrePop" Height="220" Width="250" Placement="Center">
+                <Border Background="Cornsilk" BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Пошук:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="findGenrerTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_9" Grid.Row="4" Grid.RowSpan="2" Margin="5" Background="White" BorderThickness="3" BorderBrush="Green">
+                            <Label Foreground="Black" Cursor="Hand">Готово</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_6" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="5" Background="White" BorderThickness="3" BorderBrush="Red">
+                            <Label Foreground="Black" Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Popup>
+
+            <Popup Name="addPop" Height="900" Width="300" Placement="Right">
+                <Border Background="Cornsilk" BorderBrush="#FF8A694D" BorderThickness="3" Opacity="1">
+                    <StackPanel Margin="10">
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Посилання на зображення:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="jpjTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Назва книги:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Ім'я автора:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addAutorNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Фамілія автора:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addAutorLastNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Жанр:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addGenreTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Кількість сторінок:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addCountPageTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Кількість книг:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addBookCountTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Ціна:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addCostTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Видавець:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addPubNameTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                        <TextBlock FontSize="18" HorizontalAlignment="Center" FontFamily="Segoe Print">Рік видання:</TextBlock>
+                        <Border Grid.Row="2" Grid.Column="2" Margin="5" Background="White">
+                            <TextBox Name="addPubYearTB" Margin="3" FontFamily="Segoe Print" FontSize="16" FontWeight="Bold" BorderThickness="0" TextAlignment="Center"></TextBox>
+                        </Border>
+                    
+                        
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_11" Grid.Row="4" Grid.RowSpan="2" Margin="5" Background="White" BorderThickness="3" BorderBrush="Green">
+                            <Label Foreground="Black" Cursor="Hand">Добавити</Label>
+                        </Border>
+                        <Border MouseLeftButtonUp="Border_MouseLeftButtonUp_10" Grid.Row="4" Grid.RowSpan="2" Grid.Column="1" Margin="5" Background="White" BorderThickness="3" BorderBrush="Red">
+                            <Label Foreground="Black" Cursor="Hand">Закрити</Label>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </Popup>
+
+
+            <MediaElement Name="music" LoadedBehavior="Manual" UnloadedBehavior="Manual"></MediaElement>
+        </Grid>
+
+        <Border Grid.Row="1" Grid.Column="0" CornerRadius="10" Background="#FF8A694D" Margin="10">
+            <DataGrid Grid.Row="1" Grid.Column="0" Margin="10" Name ="productList" Background="Cornsilk" BorderThickness="0" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Зображення">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Path=Image}" Width="200" Height="200"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Назва книги" Binding="{Binding Path=Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ім'я автора" Binding="{Binding Path=AutorName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамілія автора" Binding="{Binding Path=AutorLastName}"></DataGridTextColumn>
+                    <DataGridTextColumn TextElement.FontWeight="Bold" Header="Жанр" Binding="{Binding Path=Genre}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Кількість сторінок" Binding="{Binding Path=CountPage}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Кількість книг" Binding="{Binding Path=BookCount}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ціна(грн.)" Binding="{Binding Path=Cost}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Видавництво" Binding="{Binding Path=PublishingBook.Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Рік видання" Binding="{Binding Path=PublishingBook.Year}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+
+        <Border Grid.Row="1" Grid.Column="1" CornerRadius="10" Background="#FF8A694D" Margin="10">
+            <DataGrid Grid.Row="1" Grid.Column="1" Margin="10" Name ="byProduct" Background="Cornsilk" BorderThickness="0" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="Зображення">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Path=Image}" Width="200" Height="200"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Назва книги" Binding="{Binding Path=Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ім'я автора" Binding="{Binding Path=AutorName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Фамілія автора" Binding="{Binding Path=AutorLastName}"></DataGridTextColumn>
+                    <DataGridTextColumn TextElement.FontWeight="Bold" Header="Жанр" Binding="{Binding Path=Genre}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Кількість сторінок" Binding="{Binding Path=CountPage}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Ціна(грн.)" Binding="{Binding Path=Cost}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Видавництво" Binding="{Binding Path=PublishingBook.Name}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Рік видання" Binding="{Binding Path=PublishingBook.Year}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Border>
+    </Grid>
+</Window>
